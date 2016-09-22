@@ -21,6 +21,7 @@
 		92F3D3031D931F7B00A0E0E6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D3021D931F7B00A0E0E6 /* Person.swift */; };
 		92F3D3051D932E0300A0E0E6 /* ShowPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D3041D932E0300A0E0E6 /* ShowPersonViewController.swift */; };
 		92F3D3071D93311700A0E0E6 /* HouseInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D3061D93311700A0E0E6 /* HouseInformationViewController.swift */; };
+		92F3D30C1D94450F00A0E0E6 /* Breathe Fire.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92F3D30A1D94414100A0E0E6 /* Breathe Fire.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		92F3D3021D931F7B00A0E0E6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		92F3D3041D932E0300A0E0E6 /* ShowPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPersonViewController.swift; sourceTree = "<group>"; };
 		92F3D3061D93311700A0E0E6 /* HouseInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseInformationViewController.swift; sourceTree = "<group>"; };
+		92F3D30A1D94414100A0E0E6 /* Breathe Fire.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Breathe Fire.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				92F3D3061D93311700A0E0E6 /* HouseInformationViewController.swift */,
 				92F3D3001D931DA700A0E0E6 /* ShowHouseTableViewController.swift */,
 				92F3D3041D932E0300A0E0E6 /* ShowPersonViewController.swift */,
+				92F3D30B1D94440700A0E0E6 /* fonts */,
 				92F3D2FE1D93000B00A0E0E6 /* ListOfHousesTableViewController.swift */,
 				92F3D2FC1D92FA8E00A0E0E6 /* House.swift */,
 				92F3D3021D931F7B00A0E0E6 /* Person.swift */,
@@ -144,6 +147,14 @@
 				92F3D2EC1D92F76300A0E0E6 /* Info.plist */,
 			);
 			path = GameOfThrones_HouseIndexUITests;
+			sourceTree = "<group>";
+		};
+		92F3D30B1D94440700A0E0E6 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				92F3D30A1D94414100A0E0E6 /* Breathe Fire.otf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F3D30C1D94450F00A0E0E6 /* Breathe Fire.otf in Resources */,
 				92F3D2D51D92F76300A0E0E6 /* LaunchScreen.storyboard in Resources */,
 				92F3D2D21D92F76300A0E0E6 /* Assets.xcassets in Resources */,
 				92F3D2CD1D92F76300A0E0E6 /* Main.storyboard in Resources */,

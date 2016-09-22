@@ -25,6 +25,7 @@ class ListOfHousesTableViewController: UITableViewController, UISearchResultsUpd
             })
         })
         self.navigationItem.title = "Houses"
+        self.tableView.backgroundColor = UIColor.black
         
         //search stuff
         searchController.searchResultsUpdater = self
@@ -65,6 +66,8 @@ class ListOfHousesTableViewController: UITableViewController, UISearchResultsUpd
             house = houses[indexPath.row]
         }
         cell.textLabel?.text = house.name
+        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.font = UIFont(name: "Breathe Fire", size: 22)
         return cell
     }
     

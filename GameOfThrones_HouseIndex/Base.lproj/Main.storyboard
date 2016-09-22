@@ -6,6 +6,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Breathe Fire.otf">
+            <string>BreatheFire</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game Of Thrones Index-->
         <scene sceneID="tne-QT-ifu">
@@ -19,14 +24,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juB-p7-MjY">
-                                <string key="text">Welcome to the game of thrones index!  From here you can select all the houses and get its related information. Click Begin to get started!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the game of thrones index!   From here you can select all the houses and get its related information." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juB-p7-MjY">
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhU-gl-OHC">
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="30"/>
                                 <state key="normal" title="Begin">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
@@ -59,6 +63,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.47508443420000002" green="0.48316835730000002" blue="0.449498536" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HouseCell" id="bbi-Uo-AcX">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
@@ -67,6 +74,7 @@
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -90,6 +98,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.47508443420000002" green="0.48316835730000002" blue="0.449498536" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" id="7AQ-6v-7KL">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
@@ -98,6 +108,7 @@
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -127,49 +138,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glL-JG-jC2">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Words Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ct-CL-yhh">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC8-LI-fUi">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Words:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1w-Sg-8XN">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coat of Arms:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c4-Ca-aL1">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coat of Arms Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zeo-dm-o2G">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="vl0-d6-fMq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="houseSIgils-1" translatesAutoresizingMaskIntoConstraints="NO" id="5Uc-gd-SGS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="sdb-NG-nDI"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0Do-V9-aic" firstAttribute="top" secondItem="5Uc-gd-SGS" secondAttribute="bottom" id="1JP-Nj-B1X"/>
                             <constraint firstAttribute="leadingMargin" secondItem="0c4-Ca-aL1" secondAttribute="leading" id="5Q1-gn-3Ba"/>
                             <constraint firstItem="6ct-CL-yhh" firstAttribute="baseline" secondItem="q1w-Sg-8XN" secondAttribute="baseline" id="CqN-o3-dt3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="q1w-Sg-8XN" secondAttribute="leading" id="Fw8-Ip-VRf"/>
+                            <constraint firstItem="5Uc-gd-SGS" firstAttribute="leading" secondItem="IaE-0N-ScJ" secondAttribute="leading" id="IVx-85-Kqx"/>
                             <constraint firstItem="0c4-Ca-aL1" firstAttribute="top" secondItem="q1w-Sg-8XN" secondAttribute="bottom" constant="27" id="LRu-K1-K3t"/>
                             <constraint firstItem="q1w-Sg-8XN" firstAttribute="top" secondItem="sC8-LI-fUi" secondAttribute="bottom" constant="21" id="YTg-KU-iJc"/>
                             <constraint firstAttribute="leadingMargin" secondItem="sC8-LI-fUi" secondAttribute="leading" id="bXw-3O-aro"/>
                             <constraint firstItem="glL-JG-jC2" firstAttribute="baseline" secondItem="sC8-LI-fUi" secondAttribute="baseline" id="cQr-Pq-51c"/>
                             <constraint firstItem="Zeo-dm-o2G" firstAttribute="top" secondItem="0c4-Ca-aL1" secondAttribute="top" id="fFv-BV-aou"/>
+                            <constraint firstAttribute="trailing" secondItem="5Uc-gd-SGS" secondAttribute="trailing" id="gFg-wd-GYC"/>
                             <constraint firstItem="sC8-LI-fUi" firstAttribute="top" secondItem="cYK-LM-RKg" secondAttribute="bottom" constant="36" id="l5E-1I-wUS"/>
                             <constraint firstItem="glL-JG-jC2" firstAttribute="leading" secondItem="sC8-LI-fUi" secondAttribute="trailing" constant="20" id="tKC-Ew-fYx"/>
                             <constraint firstItem="Zeo-dm-o2G" firstAttribute="leading" secondItem="0c4-Ca-aL1" secondAttribute="trailing" constant="20" id="xvQ-g5-CSS"/>
@@ -200,40 +219,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHf-Hp-7cd">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaI-Nq-23D">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Culture:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNB-TN-a7j">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5GY-Oh-v3t">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Born:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-UX-GAU">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Born:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw3-xq-oAx">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BreatheFire" family="Breathe Fire" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="houseSIgils-1" translatesAutoresizingMaskIntoConstraints="NO" id="hQa-Kv-ofp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="B6E-CV-Ig9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="171" id="wae-rw-yHz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YYh-UX-GAU" firstAttribute="top" secondItem="GNB-TN-a7j" secondAttribute="bottom" constant="35" id="4Vn-kD-esp"/>
+                            <constraint firstItem="277-2u-7kz" firstAttribute="top" secondItem="hQa-Kv-ofp" secondAttribute="bottom" id="6oa-lW-SdP"/>
                             <constraint firstItem="5GY-Oh-v3t" firstAttribute="leading" secondItem="GNB-TN-a7j" secondAttribute="trailing" constant="25" id="A79-Sx-Q1P"/>
+                            <constraint firstAttribute="trailing" secondItem="hQa-Kv-ofp" secondAttribute="trailing" id="DM8-vR-kdR"/>
                             <constraint firstItem="SHf-Hp-7cd" firstAttribute="centerY" secondItem="ZaI-Nq-23D" secondAttribute="centerY" id="DSR-96-4MK"/>
                             <constraint firstItem="YYh-UX-GAU" firstAttribute="centerY" secondItem="Xw3-xq-oAx" secondAttribute="centerY" id="DeU-AN-9pr"/>
                             <constraint firstItem="Xw3-xq-oAx" firstAttribute="leading" secondItem="YYh-UX-GAU" secondAttribute="trailing" constant="25" id="F5v-KC-hnZ"/>
@@ -241,6 +268,7 @@
                             <constraint firstItem="GNB-TN-a7j" firstAttribute="centerY" secondItem="5GY-Oh-v3t" secondAttribute="centerY" id="LIK-hH-fhH"/>
                             <constraint firstItem="SHf-Hp-7cd" firstAttribute="top" secondItem="g97-vr-yDR" secondAttribute="bottom" constant="27" id="OPZ-Ad-NuB"/>
                             <constraint firstAttribute="leadingMargin" secondItem="YYh-UX-GAU" secondAttribute="leading" id="QNV-8b-jiK"/>
+                            <constraint firstItem="hQa-Kv-ofp" firstAttribute="leading" secondItem="XL4-KY-D0P" secondAttribute="leading" id="TDs-Lv-f6D"/>
                             <constraint firstAttribute="leadingMargin" secondItem="SHf-Hp-7cd" secondAttribute="leading" id="XgM-fQ-6x2"/>
                             <constraint firstItem="GNB-TN-a7j" firstAttribute="top" secondItem="SHf-Hp-7cd" secondAttribute="bottom" constant="35" id="jeE-K2-pLl"/>
                             <constraint firstItem="ZaI-Nq-23D" firstAttribute="leading" secondItem="SHf-Hp-7cd" secondAttribute="trailing" constant="25" id="zUf-Ai-PZa"/>
@@ -261,7 +289,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="958-m5-1pd" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uRd-YE-6sT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uRd-YE-6sT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -293,4 +321,7 @@
             <point key="canvasLocation" x="2759.1999999999998" y="121.88905547226388"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="houseSIgils-1" width="600" height="324"/>
+    </resources>
 </document>

@@ -25,6 +25,7 @@ class ShowHouseTableViewController: UITableViewController {
         })
         self.tableView.contentInset = UIEdgeInsetsMake(54,0,0,0)
         self.tabBarController?.navigationItem.title = house?.name
+        self.tableView.backgroundColor = UIColor.black
     }
 
     // MARK: - Table view data source
@@ -43,6 +44,8 @@ class ShowHouseTableViewController: UITableViewController {
         }else{
             cell.textLabel?.text = people[indexPath.row].name
         }
+        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.font = UIFont(name: "Breathe Fire", size: 22)
         return cell
     }
     
